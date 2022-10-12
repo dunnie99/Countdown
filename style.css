@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    font-family: cursive;
+}
+
+.xmas-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 150, 3);
+    color: rgb(209, 199, 199);
+    padding: 50px;
+    width: 95%;
+    height: 35%;
+}
+
+.newYear-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 150, 125);
+    color: rgb(236, 230, 230);
+    margin-top: 20px;
+    padding: 50px;
+    width: 95%;
+    height: 35%;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+.year{
+    font-size: 3em;
+    font-weight: bold;
+}
+.countdown{
+    margin: 30px;
+    background-color: rgb(68, 94, 63);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.Xcountdown{
+    margin: 30px;
+    background-color: rgb(106, 161, 104);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.countdown div{
+    margin: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+
+.Xcountdown div{
+    margin: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+.countdown div::before{
+    content: " ";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: .3em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+}
+.countdown #day::before{
+    content: "Days";
+}
+.countdown #hour::before{
+    content: "Hours";
+}
+.countdown #minute::before{
+    content: "Mins";
+}
+.countdown #second::before{
+    content: "Secs";
+}
+
+
+.Xcountdown div::before{
+    content: " ";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: .3em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+
+}
+.Xcountdown #xday::before{
+    content: "Days";
+}
+.Xcountdown #xhour::before{
+    content: "Hours";
+}
+.Xcountdown #xminute::before{
+    content: "Mins";
+}
+.Xcountdown #xsecond::before{
+    content: "Secs";
+}
